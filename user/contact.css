@@ -1,0 +1,270 @@
+/* Contact Us Page Styles */
+
+:root {
+  --green: #27ae60;
+  --black: #333;
+  --white: #fff;
+  --bg-color: #eee;
+  --dark-green: #2c6e61;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Reset styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Body styles */
+body {
+  background-image: url("../PicNew4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-green);
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+nav .logo img {
+  width: 100%;
+  max-width: 150px; /* Responsive logo size */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: var(--green);
+  color: var(--dark-green);
+  border-radius: 0.3rem;
+}
+
+nav ul li a.active {
+  background: var(--green);
+  color: var(--white);
+  border-radius: 0.3rem;
+}
+
+/* Hamburger menu styles */
+.checkbtn {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+#check {
+  display: none; /* Hidden by default */
+}
+
+/* Container styles */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Contact section styles */
+.contact-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem; /* Increased heading size */
+  color: var(--dark-green);
+  margin-bottom: 1.5rem; /* Spacing below the main heading */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-section > p {
+  text-align: center;
+  margin-bottom: 2rem; /* Increased spacing below paragraph */
+  font-size: 1.1rem;
+  line-height: 1.6; /* Improve readability */
+  color: var(--black);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info section {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: var(--dark-green);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: var(--green);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--dark-green);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1.5rem; /* Spacing between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem; /* Space between label and input */
+  font-weight: bold;
+  font-size: 1.2rem; /* Smaller text */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem; /* Slightly reduced padding */
+  border-radius: 0.3rem;
+  border: 1px solid var(--black);
+  font-size: 1.1rem; /* Smaller input and button text */
+}
+
+.form-group textarea {
+  resize: none; /* Prevent resizing the textarea */
+}
+
+/* Button styles */
+.btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 0.7rem; /* Slightly reduced padding */
+  border-radius: 0.5rem;
+  font-size: 1.1rem; /* Smaller input and button text */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%; /* Full width button */
+}
+
+.btn:hover {
+  background: var(--black);
+}
+
+/* Add these styles to your existing contact.css file */
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-section > p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info section {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: var(--dark-green);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: var(--green);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--dark-green);
+}
+
+/* Remove the media query for .contact-info section */
